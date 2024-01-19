@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Multi-Select Dropdown Example" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <c-filter-menu
+                name="My Dropdown"
+                icon="utility:adduser"
+                multi-select={isMultiSelect}
+                options={options}
+                onselectionchange={handleSelectionChange}>
+            </c-filter-menu>
+        </div>
+    </lightning-card>
+</template>

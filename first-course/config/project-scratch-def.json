@@ -1,0 +1,16 @@
+{
+  "orgName": "Scratch Org 2",
+  "edition": "Developer",
+  "adminEmail": "ergjus.alipaj@gmail.com",
+  "description": "Created Sep 19th 2023",
+  "features": ["EnableSetPasswordInApi"],
+  "hasSampleData": true,
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

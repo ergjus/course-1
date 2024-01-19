@@ -1,0 +1,23 @@
+<template>
+    <div class={dropdownClass} title={name}>
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled" 
+                aria-haspopup="true" 
+                title={name}
+                onclick={toggleDropdown}>
+            <lightning-icon icon-name={icon} size="medium" alternative-text="Icon"></lightning-icon>
+            <span class="slds-assistive-text">{name}</span>
+            <lightning-icon icon-name="utility:down" size="xx-small" alternative-text="Arrow"></lightning-icon>
+        </button>
+        <div class="slds-dropdown slds-dropdown_left">
+            <ul class="slds-dropdown__list" role="menu">
+                <template for:each={options} for:item="option">
+                    <li class="slds-dropdown__item" key={option.value} role="presentation" onclick={handleSelect} data-value={option.value}>
+                        <a href="#" role="menuitem" tabindex="0">
+                            <span class="slds-truncate" title={option.label}>{option.label}</span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

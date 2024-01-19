@@ -1,0 +1,6 @@
+@import 'c/cssLibrary';
+
+.html{
+    width: 80%;
+    background-color: red;
+}
